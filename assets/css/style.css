@@ -2469,7 +2469,7 @@ input:-ms-input-placeholder, textarea:-ms-input-placeholder {
   color: #CF1F1F;
 }
 .color_four .search_box button {
-  background: #CF1F1F;
+  background: #40a944;
 }
 .color_four .search_box button:hover {
   background: #222222;
@@ -2481,7 +2481,7 @@ input:-ms-input-placeholder, textarea:-ms-input-placeholder {
   color: #CF1F1F;
 }
 .color_four .categories_title {
-  background: #CF1F1F;
+  background: #40a944;
 }
 .color_four .cart_img:hover {
   border-color: #CF1F1F;
