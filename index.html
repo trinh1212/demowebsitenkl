@@ -253,7 +253,7 @@
                                                 </div>
                                                 <div class="cart_item">
                                                     <div class="cart_img">
-                                                        <a href="#"><img src="assets/img3/s-product/product1.jpg"
+                                                        <a href="#"><img src="assets/img3/s-product/lautruoc.jpg"
                                                                 alt=""></a>
                                                     </div>
                                                     <div class="cart_info">
@@ -266,7 +266,7 @@
                                                 </div>
                                                 <div class="cart_item">
                                                     <div class="cart_img">
-                                                        <a href="#"><img src="assets/img3/s-product/product2.jpg"
+                                                        <a href="#"><img src="assets/img3/s-product/lausau.png"
                                                                 alt=""></a>
                                                     </div>
                                                     <div class="cart_info">
@@ -359,12 +359,10 @@
     <!--slider area start-->
     <div class="container my-layout">
         <div class="row">
-
             <!-- CỘT SLIDER -->
             <div class="col-lg-8 col-md-7 col-12">
                 <div class="swiper mySwiper">
                     <div class="swiper-wrapper">
-
                         <!-- Slide 1 -->
                         <div class="swiper-slide">
                             <div class="banner-box">
@@ -386,8 +384,8 @@
                     </div>
 
                     <!-- Nút điều khiển -->
-                    <div class="swiper-button-next"></div>
-                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next" style="color: #e81212;"></div>
+                    <div class="swiper-button-prev" style="color: #e81212;"></div>
 
                     <!-- Dấu chấm -->
                     <div class="swiper-pagination"></div>
@@ -552,6 +550,45 @@
                             text-transform: uppercase;
                             /* nếu muốn chữ in hoa */
                         }
+
+                        /* KHUNG BAO BỌC CAROUSEL */
+                        .brand_container {
+                            position: relative;
+                            padding: 0 50px;
+                            /* chừa khoảng cho mũi tên */
+                        }
+
+                        /* MŨI TÊN TRÁI – PHẢI */
+                        .brand_container::before,
+                        .brand_container::after {
+                            content: ">";
+                            position: absolute;
+                            top: 40%;
+                            transform: translateY(-50%);
+                            font-size: 28px;
+                            font-weight: bold;
+                            color: #ccc;
+                            background: #e81212;
+                            width: 36px;
+                            height: 36px;
+                            border-radius: 50%;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            box-shadow: 0 3px 8px rgba(0, 0, 0, 0.15);
+                            z-index: 2;
+                        }
+
+                        /* Mũi tên trái */
+                        .brand_container::before {
+                            content: "<";
+                            left: 10px;
+                        }
+
+                        /* Mũi tên phải */
+                        .brand_container::after {
+                            right: 10px;
+                        }
                     </style>
                 </div>
             </div>
@@ -583,9 +620,9 @@
                                 <figure>
                                     <div class="product_thumb">
                                         <a class="primary_img" href="product-details.html"><img
-                                                src="assets/img/product/product1.jpg" alt=""></a>
+                                                src="assets/img/product/lautruoc.jpg" alt=""></a>
                                         <a class="secondary_img" href="product-details.html"><img
-                                                src="assets/img/product/product2.jpg" alt=""></a>
+                                                src="assets/img/product/lausau.png" alt=""></a>
                                         <div class="label_product">
                                             <span class="label_sale">Sale</span>
 
@@ -616,7 +653,7 @@
                                         <h4 class="product_name"><a href="product-details.html">Quisque In
                                                 Arcu</a>
                                         </h4>
-                                        
+
                                         <div class="price_box">
                                             <span class="current_price">$55.00</span>
                                             <span class="old_price">$235.00</span>
@@ -632,9 +669,9 @@
                                 <figure>
                                     <div class="product_thumb">
                                         <a class="primary_img" href="product-details.html"><img
-                                                src="assets/img/product/product1.jpg" alt=""></a>
+                                                src="assets/img/product/lautruoc.jpg" alt=""></a>
                                         <a class="secondary_img" href="product-details.html"><img
-                                                src="assets/img/product/product2.jpg" alt=""></a>
+                                                src="assets/img/product/lausau.png" alt=""></a>
                                         <div class="label_product">
                                             <span class="label_sale">Sale</span>
 
@@ -665,7 +702,7 @@
                                         <h4 class="product_name"><a href="product-details.html">Quisque In
                                                 Arcu</a>
                                         </h4>
-                                        
+
                                         <div class="price_box">
                                             <span class="current_price">$55.00</span>
                                             <span class="old_price">$235.00</span>
@@ -681,9 +718,9 @@
                                 <figure>
                                     <div class="product_thumb">
                                         <a class="primary_img" href="product-details.html"><img
-                                                src="assets/img/product/product1.jpg" alt=""></a>
+                                                src="assets/img/product/lautruoc.jpg" alt=""></a>
                                         <a class="secondary_img" href="product-details.html"><img
-                                                src="assets/img/product/product2.jpg" alt=""></a>
+                                                src="assets/img/product/lausau.png" alt=""></a>
                                         <div class="label_product">
                                             <span class="label_sale">Sale</span>
 
@@ -714,7 +751,7 @@
                                         <h4 class="product_name"><a href="product-details.html">Quisque In
                                                 Arcu</a>
                                         </h4>
-                                        
+
                                         <div class="price_box">
                                             <span class="current_price">$55.00</span>
                                             <span class="old_price">$235.00</span>
@@ -730,9 +767,9 @@
                                 <figure>
                                     <div class="product_thumb">
                                         <a class="primary_img" href="product-details.html"><img
-                                                src="assets/img/product/product1.jpg" alt=""></a>
+                                                src="assets/img/product/lautruoc.jpg" alt=""></a>
                                         <a class="secondary_img" href="product-details.html"><img
-                                                src="assets/img/product/product2.jpg" alt=""></a>
+                                                src="assets/img/product/lausau.png" alt=""></a>
                                         <div class="label_product">
                                             <span class="label_sale">Sale</span>
 
@@ -763,7 +800,7 @@
                                         <h4 class="product_name"><a href="product-details.html">Quisque In
                                                 Arcu</a>
                                         </h4>
-                                        
+
                                         <div class="price_box">
                                             <span class="current_price">$55.00</span>
                                             <span class="old_price">$235.00</span>
@@ -779,9 +816,9 @@
                                 <figure>
                                     <div class="product_thumb">
                                         <a class="primary_img" href="product-details.html"><img
-                                                src="assets/img/product/product1.jpg" alt=""></a>
+                                                src="assets/img/product/lautruoc.jpg" alt=""></a>
                                         <a class="secondary_img" href="product-details.html"><img
-                                                src="assets/img/product/product2.jpg" alt=""></a>
+                                                src="assets/img/product/lausau.png" alt=""></a>
                                         <div class="label_product">
                                             <span class="label_sale">Sale</span>
 
@@ -812,7 +849,7 @@
                                         <h4 class="product_name"><a href="product-details.html">Quisque In
                                                 Arcu</a>
                                         </h4>
-                                        
+
                                         <div class="price_box">
                                             <span class="current_price">$55.00</span>
                                             <span class="old_price">$235.00</span>
@@ -828,9 +865,9 @@
                                 <figure>
                                     <div class="product_thumb">
                                         <a class="primary_img" href="product-details.html"><img
-                                                src="assets/img/product/product1.jpg" alt=""></a>
+                                                src="assets/img/product/lautruoc.jpg" alt=""></a>
                                         <a class="secondary_img" href="product-details.html"><img
-                                                src="assets/img/product/product2.jpg" alt=""></a>
+                                                src="assets/img/product/lausau.png" alt=""></a>
                                         <div class="label_product">
                                             <span class="label_sale">Sale</span>
 
@@ -861,7 +898,7 @@
                                         <h4 class="product_name"><a href="product-details.html">Quisque In
                                                 Arcu</a>
                                         </h4>
-                                        
+
                                         <div class="price_box">
                                             <span class="current_price">$55.00</span>
                                             <span class="old_price">$235.00</span>
@@ -877,9 +914,9 @@
                                 <figure>
                                     <div class="product_thumb">
                                         <a class="primary_img" href="product-details.html"><img
-                                                src="assets/img/product/product1.jpg" alt=""></a>
+                                                src="assets/img/product/lautruoc.jpg" alt=""></a>
                                         <a class="secondary_img" href="product-details.html"><img
-                                                src="assets/img/product/product2.jpg" alt=""></a>
+                                                src="assets/img/product/lausau.png" alt=""></a>
                                         <div class="label_product">
                                             <span class="label_sale">Sale</span>
 
@@ -910,7 +947,7 @@
                                         <h4 class="product_name"><a href="product-details.html">Quisque In
                                                 Arcu</a>
                                         </h4>
-                                        
+
                                         <div class="price_box">
                                             <span class="current_price">$55.00</span>
                                             <span class="old_price">$235.00</span>
@@ -957,9 +994,9 @@
                                 </div>
                                 <div class="product_thumb">
                                     <a class="primary_img" href="product-details.html"><img
-                                            src="assets/img/product/product1.jpg" alt=""></a>
+                                            src="assets/img/product/lautruoc.jpg" alt=""></a>
                                     <a class="secondary_img" href="product-details.html"><img
-                                            src="assets/img/product/product2.jpg" alt=""></a>
+                                            src="assets/img/product/lausau.png" alt=""></a>
                                     <div class="label_product">
                                         <span class="label_sale">Sale</span>
 
@@ -990,7 +1027,7 @@
                                     <h4 class="product_name"><a href="product-details.html">Aliquam
                                             Consequat</a>
                                     </h4>
-                                    
+
                                     <div class="price_box">
                                         <span class="current_price">$26.00</span>
                                         <span class="old_price">$362.00</span>
@@ -1000,7 +1037,7 @@
                                     <h4 class="product_name"><a href="product-details.html">Aliquam
                                             Consequat</a>
                                     </h4>
-                                    
+
                                     <div class="price_box">
                                         <span class="current_price">$26.00</span>
                                         <span class="old_price">$362.00</span>
@@ -1044,9 +1081,9 @@
                                 </div>
                                 <div class="product_thumb">
                                     <a class="primary_img" href="product-details.html"><img
-                                            src="assets/img/product/product1.jpg" alt=""></a>
+                                            src="assets/img/product/lautruoc.jpg" alt=""></a>
                                     <a class="secondary_img" href="product-details.html"><img
-                                            src="assets/img/product/product2.jpg" alt=""></a>
+                                            src="assets/img/product/lausau.png" alt=""></a>
                                     <div class="label_product">
                                         <span class="label_sale">Sale</span>
 
@@ -1077,7 +1114,7 @@
                                     <h4 class="product_name"><a href="product-details.html">Aliquam
                                             Consequat</a>
                                     </h4>
-                                    
+
                                     <div class="price_box">
                                         <span class="current_price">$26.00</span>
                                         <span class="old_price">$362.00</span>
@@ -1087,7 +1124,7 @@
                                     <h4 class="product_name"><a href="product-details.html">Aliquam
                                             Consequat</a>
                                     </h4>
-                                    
+
                                     <div class="price_box">
                                         <span class="current_price">$26.00</span>
                                         <span class="old_price">$362.00</span>
@@ -1131,9 +1168,9 @@
                                 </div>
                                 <div class="product_thumb">
                                     <a class="primary_img" href="product-details.html"><img
-                                            src="assets/img/product/product1.jpg" alt=""></a>
+                                            src="assets/img/product/lautruoc.jpg" alt=""></a>
                                     <a class="secondary_img" href="product-details.html"><img
-                                            src="assets/img/product/product2.jpg" alt=""></a>
+                                            src="assets/img/product/lausau.png" alt=""></a>
                                     <div class="label_product">
                                         <span class="label_sale">Sale</span>
 
@@ -1164,7 +1201,7 @@
                                     <h4 class="product_name"><a href="product-details.html">Aliquam
                                             Consequat</a>
                                     </h4>
-                                    
+
                                     <div class="price_box">
                                         <span class="current_price">$26.00</span>
                                         <span class="old_price">$362.00</span>
@@ -1174,7 +1211,7 @@
                                     <h4 class="product_name"><a href="product-details.html">Aliquam
                                             Consequat</a>
                                     </h4>
-                                    
+
                                     <div class="price_box">
                                         <span class="current_price">$26.00</span>
                                         <span class="old_price">$362.00</span>
@@ -1218,9 +1255,9 @@
                                 </div>
                                 <div class="product_thumb">
                                     <a class="primary_img" href="product-details.html"><img
-                                            src="assets/img/product/product1.jpg" alt=""></a>
+                                            src="assets/img/product/lautruoc.jpg" alt=""></a>
                                     <a class="secondary_img" href="product-details.html"><img
-                                            src="assets/img/product/product2.jpg" alt=""></a>
+                                            src="assets/img/product/lausau.png" alt=""></a>
                                     <div class="label_product">
                                         <span class="label_sale">Sale</span>
 
@@ -1251,7 +1288,7 @@
                                     <h4 class="product_name"><a href="product-details.html">Aliquam
                                             Consequat</a>
                                     </h4>
-                                    
+
                                     <div class="price_box">
                                         <span class="current_price">$26.00</span>
                                         <span class="old_price">$362.00</span>
@@ -1261,7 +1298,7 @@
                                     <h4 class="product_name"><a href="product-details.html">Aliquam
                                             Consequat</a>
                                     </h4>
-                                    
+
                                     <div class="price_box">
                                         <span class="current_price">$26.00</span>
                                         <span class="old_price">$362.00</span>
@@ -1305,9 +1342,9 @@
                                 </div>
                                 <div class="product_thumb">
                                     <a class="primary_img" href="product-details.html"><img
-                                            src="assets/img/product/product1.jpg" alt=""></a>
+                                            src="assets/img/product/lautruoc.jpg" alt=""></a>
                                     <a class="secondary_img" href="product-details.html"><img
-                                            src="assets/img/product/product2.jpg" alt=""></a>
+                                            src="assets/img/product/lausau.png" alt=""></a>
                                     <div class="label_product">
                                         <span class="label_sale">Sale</span>
 
@@ -1338,7 +1375,7 @@
                                     <h4 class="product_name"><a href="product-details.html">Aliquam
                                             Consequat</a>
                                     </h4>
-                                    
+
                                     <div class="price_box">
                                         <span class="current_price">$26.00</span>
                                         <span class="old_price">$362.00</span>
@@ -1348,7 +1385,7 @@
                                     <h4 class="product_name"><a href="product-details.html">Aliquam
                                             Consequat</a>
                                     </h4>
-                                    
+
                                     <div class="price_box">
                                         <span class="current_price">$26.00</span>
                                         <span class="old_price">$362.00</span>
@@ -1392,9 +1429,9 @@
                                 </div>
                                 <div class="product_thumb">
                                     <a class="primary_img" href="product-details.html"><img
-                                            src="assets/img/product/product1.jpg" alt=""></a>
+                                            src="assets/img/product/lautruoc.jpg" alt=""></a>
                                     <a class="secondary_img" href="product-details.html"><img
-                                            src="assets/img/product/product2.jpg" alt=""></a>
+                                            src="assets/img/product/lausau.png" alt=""></a>
                                     <div class="label_product">
                                         <span class="label_sale">Sale</span>
 
@@ -1425,7 +1462,7 @@
                                     <h4 class="product_name"><a href="product-details.html">Aliquam
                                             Consequat</a>
                                     </h4>
-                                    
+
                                     <div class="price_box">
                                         <span class="current_price">$26.00</span>
                                         <span class="old_price">$362.00</span>
@@ -1435,7 +1472,7 @@
                                     <h4 class="product_name"><a href="product-details.html">Aliquam
                                             Consequat</a>
                                     </h4>
-                                    
+
                                     <div class="price_box">
                                         <span class="current_price">$26.00</span>
                                         <span class="old_price">$362.00</span>
@@ -1479,9 +1516,9 @@
                                 </div>
                                 <div class="product_thumb">
                                     <a class="primary_img" href="product-details.html"><img
-                                            src="assets/img/product/product1.jpg" alt=""></a>
+                                            src="assets/img/product/lautruoc.jpg" alt=""></a>
                                     <a class="secondary_img" href="product-details.html"><img
-                                            src="assets/img/product/product2.jpg" alt=""></a>
+                                            src="assets/img/product/lausau.png" alt=""></a>
                                     <div class="label_product">
                                         <span class="label_sale">Sale</span>
 
@@ -1512,7 +1549,7 @@
                                     <h4 class="product_name"><a href="product-details.html">Aliquam
                                             Consequat</a>
                                     </h4>
-                                    
+
                                     <div class="price_box">
                                         <span class="current_price">$26.00</span>
                                         <span class="old_price">$362.00</span>
@@ -1522,7 +1559,7 @@
                                     <h4 class="product_name"><a href="product-details.html">Aliquam
                                             Consequat</a>
                                     </h4>
-                                    
+
                                     <div class="price_box">
                                         <span class="current_price">$26.00</span>
                                         <span class="old_price">$362.00</span>
@@ -1566,9 +1603,9 @@
                                 </div>
                                 <div class="product_thumb">
                                     <a class="primary_img" href="product-details.html"><img
-                                            src="assets/img/product/product1.jpg" alt=""></a>
+                                            src="assets/img/product/lautruoc.jpg" alt=""></a>
                                     <a class="secondary_img" href="product-details.html"><img
-                                            src="assets/img/product/product2.jpg" alt=""></a>
+                                            src="assets/img/product/lausau.png" alt=""></a>
                                     <div class="label_product">
                                         <span class="label_sale">Sale</span>
 
@@ -1599,7 +1636,7 @@
                                     <h4 class="product_name"><a href="product-details.html">Aliquam
                                             Consequat</a>
                                     </h4>
-                                    
+
                                     <div class="price_box">
                                         <span class="current_price">$26.00</span>
                                         <span class="old_price">$362.00</span>
@@ -1609,7 +1646,7 @@
                                     <h4 class="product_name"><a href="product-details.html">Aliquam
                                             Consequat</a>
                                     </h4>
-                                    
+
                                     <div class="price_box">
                                         <span class="current_price">$26.00</span>
                                         <span class="old_price">$362.00</span>
@@ -1653,9 +1690,9 @@
                                 </div>
                                 <div class="product_thumb">
                                     <a class="primary_img" href="product-details.html"><img
-                                            src="assets/img/product/product1.jpg" alt=""></a>
+                                            src="assets/img/product/lautruoc.jpg" alt=""></a>
                                     <a class="secondary_img" href="product-details.html"><img
-                                            src="assets/img/product/product2.jpg" alt=""></a>
+                                            src="assets/img/product/lausau.png" alt=""></a>
                                     <div class="label_product">
                                         <span class="label_sale">Sale</span>
 
@@ -1686,7 +1723,7 @@
                                     <h4 class="product_name"><a href="product-details.html">Aliquam
                                             Consequat</a>
                                     </h4>
-                                    
+
                                     <div class="price_box">
                                         <span class="current_price">$26.00</span>
                                         <span class="old_price">$362.00</span>
@@ -1696,7 +1733,7 @@
                                     <h4 class="product_name"><a href="product-details.html">Aliquam
                                             Consequat</a>
                                     </h4>
-                                    
+
                                     <div class="price_box">
                                         <span class="current_price">$26.00</span>
                                         <span class="old_price">$362.00</span>
@@ -1740,9 +1777,9 @@
                                 </div>
                                 <div class="product_thumb">
                                     <a class="primary_img" href="product-details.html"><img
-                                            src="assets/img/product/product1.jpg" alt=""></a>
+                                            src="assets/img/product/lautruoc.jpg" alt=""></a>
                                     <a class="secondary_img" href="product-details.html"><img
-                                            src="assets/img/product/product2.jpg" alt=""></a>
+                                            src="assets/img/product/lausau.png" alt=""></a>
                                     <div class="label_product">
                                         <span class="label_sale">Sale</span>
 
@@ -1773,7 +1810,7 @@
                                     <h4 class="product_name"><a href="product-details.html">Aliquam
                                             Consequat</a>
                                     </h4>
-                                    
+
                                     <div class="price_box">
                                         <span class="current_price">$26.00</span>
                                         <span class="old_price">$362.00</span>
@@ -1783,7 +1820,7 @@
                                     <h4 class="product_name"><a href="product-details.html">Aliquam
                                             Consequat</a>
                                     </h4>
-                                    
+
                                     <div class="price_box">
                                         <span class="current_price">$26.00</span>
                                         <span class="old_price">$362.00</span>
@@ -1827,9 +1864,9 @@
                                 </div>
                                 <div class="product_thumb">
                                     <a class="primary_img" href="product-details.html"><img
-                                            src="assets/img/product/product1.jpg" alt=""></a>
+                                            src="assets/img/product/lautruoc.jpg" alt=""></a>
                                     <a class="secondary_img" href="product-details.html"><img
-                                            src="assets/img/product/product2.jpg" alt=""></a>
+                                            src="assets/img/product/lausau.png" alt=""></a>
                                     <div class="label_product">
                                         <span class="label_sale">Sale</span>
 
@@ -1860,7 +1897,7 @@
                                     <h4 class="product_name"><a href="product-details.html">Aliquam
                                             Consequat</a>
                                     </h4>
-                                    
+
                                     <div class="price_box">
                                         <span class="current_price">$26.00</span>
                                         <span class="old_price">$362.00</span>
@@ -1870,7 +1907,7 @@
                                     <h4 class="product_name"><a href="product-details.html">Aliquam
                                             Consequat</a>
                                     </h4>
-                                    
+
                                     <div class="price_box">
                                         <span class="current_price">$26.00</span>
                                         <span class="old_price">$362.00</span>
@@ -1914,9 +1951,9 @@
                                 </div>
                                 <div class="product_thumb">
                                     <a class="primary_img" href="product-details.html"><img
-                                            src="assets/img/product/product1.jpg" alt=""></a>
+                                            src="assets/img/product/lautruoc.jpg" alt=""></a>
                                     <a class="secondary_img" href="product-details.html"><img
-                                            src="assets/img/product/product2.jpg" alt=""></a>
+                                            src="assets/img/product/lausau.png" alt=""></a>
                                     <div class="label_product">
                                         <span class="label_sale">Sale</span>
 
@@ -1947,7 +1984,7 @@
                                     <h4 class="product_name"><a href="product-details.html">Aliquam
                                             Consequat</a>
                                     </h4>
-                                    
+
                                     <div class="price_box">
                                         <span class="current_price">$26.00</span>
                                         <span class="old_price">$362.00</span>
@@ -1957,7 +1994,7 @@
                                     <h4 class="product_name"><a href="product-details.html">Aliquam
                                             Consequat</a>
                                     </h4>
-                                    
+
                                     <div class="price_box">
                                         <span class="current_price">$26.00</span>
                                         <span class="old_price">$362.00</span>
@@ -2001,9 +2038,9 @@
                                 </div>
                                 <div class="product_thumb">
                                     <a class="primary_img" href="product-details.html"><img
-                                            src="assets/img/product/product1.jpg" alt=""></a>
+                                            src="assets/img/product/lautruoc.jpg" alt=""></a>
                                     <a class="secondary_img" href="product-details.html"><img
-                                            src="assets/img/product/product2.jpg" alt=""></a>
+                                            src="assets/img/product/lausau.png" alt=""></a>
                                     <div class="label_product">
                                         <span class="label_sale">Sale</span>
 
@@ -2034,7 +2071,7 @@
                                     <h4 class="product_name"><a href="product-details.html">Aliquam
                                             Consequat</a>
                                     </h4>
-                                    
+
                                     <div class="price_box">
                                         <span class="current_price">$26.00</span>
                                         <span class="old_price">$362.00</span>
@@ -2044,7 +2081,7 @@
                                     <h4 class="product_name"><a href="product-details.html">Aliquam
                                             Consequat</a>
                                     </h4>
-                                    
+
                                     <div class="price_box">
                                         <span class="current_price">$26.00</span>
                                         <span class="old_price">$362.00</span>
@@ -2088,9 +2125,9 @@
                                 </div>
                                 <div class="product_thumb">
                                     <a class="primary_img" href="product-details.html"><img
-                                            src="assets/img/product/product1.jpg" alt=""></a>
+                                            src="assets/img/product/lautruoc.jpg" alt=""></a>
                                     <a class="secondary_img" href="product-details.html"><img
-                                            src="assets/img/product/product2.jpg" alt=""></a>
+                                            src="assets/img/product/lausau.png" alt=""></a>
                                     <div class="label_product">
                                         <span class="label_sale">Sale</span>
 
@@ -2121,7 +2158,7 @@
                                     <h4 class="product_name"><a href="product-details.html">Aliquam
                                             Consequat</a>
                                     </h4>
-                                    
+
                                     <div class="price_box">
                                         <span class="current_price">$26.00</span>
                                         <span class="old_price">$362.00</span>
@@ -2131,7 +2168,7 @@
                                     <h4 class="product_name"><a href="product-details.html">Aliquam
                                             Consequat</a>
                                     </h4>
-                                    
+
                                     <div class="price_box">
                                         <span class="current_price">$26.00</span>
                                         <span class="old_price">$362.00</span>
@@ -2175,9 +2212,9 @@
                                 </div>
                                 <div class="product_thumb">
                                     <a class="primary_img" href="product-details.html"><img
-                                            src="assets/img/product/product1.jpg" alt=""></a>
+                                            src="assets/img/product/lautruoc.jpg" alt=""></a>
                                     <a class="secondary_img" href="product-details.html"><img
-                                            src="assets/img/product/product2.jpg" alt=""></a>
+                                            src="assets/img/product/lausau.png" alt=""></a>
                                     <div class="label_product">
                                         <span class="label_sale">Sale</span>
 
@@ -2208,7 +2245,7 @@
                                     <h4 class="product_name"><a href="product-details.html">Aliquam
                                             Consequat</a>
                                     </h4>
-                                    
+
                                     <div class="price_box">
                                         <span class="current_price">$26.00</span>
                                         <span class="old_price">$362.00</span>
@@ -2218,7 +2255,7 @@
                                     <h4 class="product_name"><a href="product-details.html">Aliquam
                                             Consequat</a>
                                     </h4>
-                                    
+
                                     <div class="price_box">
                                         <span class="current_price">$26.00</span>
                                         <span class="old_price">$362.00</span>
@@ -2262,9 +2299,9 @@
                                 </div>
                                 <div class="product_thumb">
                                     <a class="primary_img" href="product-details.html"><img
-                                            src="assets/img/product/product1.jpg" alt=""></a>
+                                            src="assets/img/product/lautruoc.jpg" alt=""></a>
                                     <a class="secondary_img" href="product-details.html"><img
-                                            src="assets/img/product/product2.jpg" alt=""></a>
+                                            src="assets/img/product/lausau.png" alt=""></a>
                                     <div class="label_product">
                                         <span class="label_sale">Sale</span>
 
@@ -2295,7 +2332,7 @@
                                     <h4 class="product_name"><a href="product-details.html">Aliquam
                                             Consequat</a>
                                     </h4>
-                                    
+
                                     <div class="price_box">
                                         <span class="current_price">$26.00</span>
                                         <span class="old_price">$362.00</span>
@@ -2305,7 +2342,7 @@
                                     <h4 class="product_name"><a href="product-details.html">Aliquam
                                             Consequat</a>
                                     </h4>
-                                    
+
                                     <div class="price_box">
                                         <span class="current_price">$26.00</span>
                                         <span class="old_price">$362.00</span>
@@ -2377,9 +2414,9 @@
                                 <figure>
                                     <div class="product_thumb">
                                         <a class="primary_img" href="product-details.html"><img
-                                                src="assets/img/product/product1.jpg" alt=""></a>
+                                                src="assets/img/product/lautruoc.jpg" alt=""></a>
                                         <a class="secondary_img" href="product-details.html"><img
-                                                src="assets/img/product/product2.jpg" alt=""></a>
+                                                src="assets/img/product/lausau.png" alt=""></a>
                                         <div class="label_product">
                                             <span class="label_sale">Sale</span>
 
@@ -2410,7 +2447,7 @@
                                         <h4 class="product_name"><a href="product-details.html">Quisque In
                                                 Arcu</a>
                                         </h4>
-                                        
+
                                         <div class="price_box">
                                             <span class="current_price">$55.00</span>
                                             <span class="old_price">$235.00</span>
@@ -2422,9 +2459,9 @@
                                 <figure>
                                     <div class="product_thumb">
                                         <a class="primary_img" href="product-details.html"><img
-                                                src="assets/img/product/product1.jpg" alt=""></a>
+                                                src="assets/img/product/lautruoc.jpg" alt=""></a>
                                         <a class="secondary_img" href="product-details.html"><img
-                                                src="assets/img/product/product2.jpg" alt=""></a>
+                                                src="assets/img/product/lausau.png" alt=""></a>
                                         <div class="label_product">
                                             <span class="label_sale">Sale</span>
 
@@ -2455,7 +2492,7 @@
                                         <h4 class="product_name"><a href="product-details.html">Quisque In
                                                 Arcu</a>
                                         </h4>
-                                        
+
                                         <div class="price_box">
                                             <span class="current_price">$55.00</span>
                                             <span class="old_price">$235.00</span>
@@ -2467,9 +2504,9 @@
                                 <figure>
                                     <div class="product_thumb">
                                         <a class="primary_img" href="product-details.html"><img
-                                                src="assets/img/product/product1.jpg" alt=""></a>
+                                                src="assets/img/product/lautruoc.jpg" alt=""></a>
                                         <a class="secondary_img" href="product-details.html"><img
-                                                src="assets/img/product/product2.jpg" alt=""></a>
+                                                src="assets/img/product/lausau.png" alt=""></a>
                                         <div class="label_product">
                                             <span class="label_sale">Sale</span>
 
@@ -2500,7 +2537,7 @@
                                         <h4 class="product_name"><a href="product-details.html">Quisque In
                                                 Arcu</a>
                                         </h4>
-                                        
+
                                         <div class="price_box">
                                             <span class="current_price">$55.00</span>
                                             <span class="old_price">$235.00</span>
@@ -2512,9 +2549,9 @@
                                 <figure>
                                     <div class="product_thumb">
                                         <a class="primary_img" href="product-details.html"><img
-                                                src="assets/img/product/product1.jpg" alt=""></a>
+                                                src="assets/img/product/lautruoc.jpg" alt=""></a>
                                         <a class="secondary_img" href="product-details.html"><img
-                                                src="assets/img/product/product2.jpg" alt=""></a>
+                                                src="assets/img/product/lausau.png" alt=""></a>
                                         <div class="label_product">
                                             <span class="label_sale">Sale</span>
 
@@ -2545,7 +2582,7 @@
                                         <h4 class="product_name"><a href="product-details.html">Quisque In
                                                 Arcu</a>
                                         </h4>
-                                        
+
                                         <div class="price_box">
                                             <span class="current_price">$55.00</span>
                                             <span class="old_price">$235.00</span>
@@ -2557,9 +2594,9 @@
                                 <figure>
                                     <div class="product_thumb">
                                         <a class="primary_img" href="product-details.html"><img
-                                                src="assets/img/product/product1.jpg" alt=""></a>
+                                                src="assets/img/product/lautruoc.jpg" alt=""></a>
                                         <a class="secondary_img" href="product-details.html"><img
-                                                src="assets/img/product/product2.jpg" alt=""></a>
+                                                src="assets/img/product/lausau.png" alt=""></a>
                                         <div class="label_product">
                                             <span class="label_sale">Sale</span>
 
@@ -2590,7 +2627,7 @@
                                         <h4 class="product_name"><a href="product-details.html">Quisque In
                                                 Arcu</a>
                                         </h4>
-                                        
+
                                         <div class="price_box">
                                             <span class="current_price">$55.00</span>
                                             <span class="old_price">$235.00</span>
@@ -2602,9 +2639,9 @@
                                 <figure>
                                     <div class="product_thumb">
                                         <a class="primary_img" href="product-details.html"><img
-                                                src="assets/img/product/product1.jpg" alt=""></a>
+                                                src="assets/img/product/lautruoc.jpg" alt=""></a>
                                         <a class="secondary_img" href="product-details.html"><img
-                                                src="assets/img/product/product2.jpg" alt=""></a>
+                                                src="assets/img/product/lausau.png" alt=""></a>
                                         <div class="label_product">
                                             <span class="label_sale">Sale</span>
 
@@ -2635,7 +2672,7 @@
                                         <h4 class="product_name"><a href="product-details.html">Quisque In
                                                 Arcu</a>
                                         </h4>
-                                        
+
                                         <div class="price_box">
                                             <span class="current_price">$55.00</span>
                                             <span class="old_price">$235.00</span>
@@ -2647,9 +2684,9 @@
                                 <figure>
                                     <div class="product_thumb">
                                         <a class="primary_img" href="product-details.html"><img
-                                                src="assets/img/product/product1.jpg" alt=""></a>
+                                                src="assets/img/product/lautruoc.jpg" alt=""></a>
                                         <a class="secondary_img" href="product-details.html"><img
-                                                src="assets/img/product/product2.jpg" alt=""></a>
+                                                src="assets/img/product/lausau.png" alt=""></a>
                                         <div class="label_product">
                                             <span class="label_sale">Sale</span>
 
@@ -2680,7 +2717,7 @@
                                         <h4 class="product_name"><a href="product-details.html">Quisque In
                                                 Arcu</a>
                                         </h4>
-                                        
+
                                         <div class="price_box">
                                             <span class="current_price">$55.00</span>
                                             <span class="old_price">$235.00</span>
@@ -2723,9 +2760,9 @@
                                 style="box-shadow: 0 15px 10px rgba(0, 0, 0, 0.2);border-radius: 33px;">
                                 <div class="product_thumb">
                                     <a class="primary_img" href="product-details.html"><img
-                                            src="assets/img/product/product1.jpg" alt=""></a>
+                                            src="assets/img/product/lautruoc.jpg" alt=""></a>
                                     <a class="secondary_img" href="product-details.html"><img
-                                            src="assets/img/product/product2.jpg" alt=""></a>
+                                            src="assets/img/product/lausau.png" alt=""></a>
                                     <div class="label_product">
                                         <span class="label_sale">Sale</span>
 
@@ -2756,7 +2793,7 @@
                                     <h4 class="product_name"><a href="product-details.html">Aliquam
                                             Consequat</a>
                                     </h4>
-                                    
+
                                     <div class="price_box">
                                         <span class="current_price">$26.00</span>
                                         <span class="old_price">$362.00</span>
@@ -2766,7 +2803,7 @@
                                     <h4 class="product_name"><a href="product-details.html">Aliquam
                                             Consequat</a>
                                     </h4>
-                                    
+
                                     <div class="price_box">
                                         <span class="current_price">$26.00</span>
                                         <span class="old_price">$362.00</span>
@@ -2806,9 +2843,9 @@
                                 style="box-shadow: 0 15px 10px rgba(0, 0, 0, 0.2);border-radius: 33px;">
                                 <div class="product_thumb">
                                     <a class="primary_img" href="product-details.html"><img
-                                            src="assets/img/product/product1.jpg" alt=""></a>
+                                            src="assets/img/product/lautruoc.jpg" alt=""></a>
                                     <a class="secondary_img" href="product-details.html"><img
-                                            src="assets/img/product/product2.jpg" alt=""></a>
+                                            src="assets/img/product/lausau.png" alt=""></a>
                                     <div class="label_product">
                                         <span class="label_sale">Sale</span>
 
@@ -2839,7 +2876,7 @@
                                     <h4 class="product_name"><a href="product-details.html">Aliquam
                                             Consequat</a>
                                     </h4>
-                                    
+
                                     <div class="price_box">
                                         <span class="current_price">$26.00</span>
                                         <span class="old_price">$362.00</span>
@@ -2849,7 +2886,7 @@
                                     <h4 class="product_name"><a href="product-details.html">Aliquam
                                             Consequat</a>
                                     </h4>
-                                    
+
                                     <div class="price_box">
                                         <span class="current_price">$26.00</span>
                                         <span class="old_price">$362.00</span>
@@ -2889,9 +2926,9 @@
                                 style="box-shadow: 0 15px 10px rgba(0, 0, 0, 0.2);border-radius: 33px;">
                                 <div class="product_thumb">
                                     <a class="primary_img" href="product-details.html"><img
-                                            src="assets/img/product/product1.jpg" alt=""></a>
+                                            src="assets/img/product/lautruoc.jpg" alt=""></a>
                                     <a class="secondary_img" href="product-details.html"><img
-                                            src="assets/img/product/product2.jpg" alt=""></a>
+                                            src="assets/img/product/lausau.png" alt=""></a>
                                     <div class="label_product">
                                         <span class="label_sale">Sale</span>
 
@@ -2922,7 +2959,7 @@
                                     <h4 class="product_name"><a href="product-details.html">Aliquam
                                             Consequat</a>
                                     </h4>
-                                    
+
                                     <div class="price_box">
                                         <span class="current_price">$26.00</span>
                                         <span class="old_price">$362.00</span>
@@ -2932,7 +2969,7 @@
                                     <h4 class="product_name"><a href="product-details.html">Aliquam
                                             Consequat</a>
                                     </h4>
-                                    
+
                                     <div class="price_box">
                                         <span class="current_price">$26.00</span>
                                         <span class="old_price">$362.00</span>
@@ -2972,9 +3009,9 @@
                                 style="box-shadow: 0 15px 10px rgba(0, 0, 0, 0.2);border-radius: 33px;">
                                 <div class="product_thumb">
                                     <a class="primary_img" href="product-details.html"><img
-                                            src="assets/img/product/product1.jpg" alt=""></a>
+                                            src="assets/img/product/lautruoc.jpg" alt=""></a>
                                     <a class="secondary_img" href="product-details.html"><img
-                                            src="assets/img/product/product2.jpg" alt=""></a>
+                                            src="assets/img/product/lausau.png" alt=""></a>
                                     <div class="label_product">
                                         <span class="label_sale">Sale</span>
 
@@ -3005,7 +3042,7 @@
                                     <h4 class="product_name"><a href="product-details.html">Aliquam
                                             Consequat</a>
                                     </h4>
-                                    
+
                                     <div class="price_box">
                                         <span class="current_price">$26.00</span>
                                         <span class="old_price">$362.00</span>
@@ -3015,7 +3052,7 @@
                                     <h4 class="product_name"><a href="product-details.html">Aliquam
                                             Consequat</a>
                                     </h4>
-                                    
+
                                     <div class="price_box">
                                         <span class="current_price">$26.00</span>
                                         <span class="old_price">$362.00</span>
@@ -3055,9 +3092,9 @@
                                 style="box-shadow: 0 15px 10px rgba(0, 0, 0, 0.2);border-radius: 33px;">
                                 <div class="product_thumb">
                                     <a class="primary_img" href="product-details.html"><img
-                                            src="assets/img/product/product1.jpg" alt=""></a>
+                                            src="assets/img/product/lautruoc.jpg" alt=""></a>
                                     <a class="secondary_img" href="product-details.html"><img
-                                            src="assets/img/product/product2.jpg" alt=""></a>
+                                            src="assets/img/product/lausau.png" alt=""></a>
                                     <div class="label_product">
                                         <span class="label_sale">Sale</span>
 
@@ -3088,7 +3125,7 @@
                                     <h4 class="product_name"><a href="product-details.html">Aliquam
                                             Consequat</a>
                                     </h4>
-                                    
+
                                     <div class="price_box">
                                         <span class="current_price">$26.00</span>
                                         <span class="old_price">$362.00</span>
@@ -3098,7 +3135,7 @@
                                     <h4 class="product_name"><a href="product-details.html">Aliquam
                                             Consequat</a>
                                     </h4>
-                                    
+
                                     <div class="price_box">
                                         <span class="current_price">$26.00</span>
                                         <span class="old_price">$362.00</span>
@@ -3138,9 +3175,9 @@
                                 style="box-shadow: 0 15px 10px rgba(0, 0, 0, 0.2);border-radius: 33px;">
                                 <div class="product_thumb">
                                     <a class="primary_img" href="product-details.html"><img
-                                            src="assets/img/product/product1.jpg" alt=""></a>
+                                            src="assets/img/product/lautruoc.jpg" alt=""></a>
                                     <a class="secondary_img" href="product-details.html"><img
-                                            src="assets/img/product/product2.jpg" alt=""></a>
+                                            src="assets/img/product/lausau.png" alt=""></a>
                                     <div class="label_product">
                                         <span class="label_sale">Sale</span>
 
@@ -3171,7 +3208,7 @@
                                     <h4 class="product_name"><a href="product-details.html">Aliquam
                                             Consequat</a>
                                     </h4>
-                                    
+
                                     <div class="price_box">
                                         <span class="current_price">$26.00</span>
                                         <span class="old_price">$362.00</span>
@@ -3181,7 +3218,7 @@
                                     <h4 class="product_name"><a href="product-details.html">Aliquam
                                             Consequat</a>
                                     </h4>
-                                    
+
                                     <div class="price_box">
                                         <span class="current_price">$26.00</span>
                                         <span class="old_price">$362.00</span>
@@ -3221,9 +3258,9 @@
                                 style="box-shadow: 0 15px 10px rgba(0, 0, 0, 0.2);border-radius: 33px;">
                                 <div class="product_thumb">
                                     <a class="primary_img" href="product-details.html"><img
-                                            src="assets/img/product/product1.jpg" alt=""></a>
+                                            src="assets/img/product/lautruoc.jpg" alt=""></a>
                                     <a class="secondary_img" href="product-details.html"><img
-                                            src="assets/img/product/product2.jpg" alt=""></a>
+                                            src="assets/img/product/lausau.png" alt=""></a>
                                     <div class="label_product">
                                         <span class="label_sale">Sale</span>
 
@@ -3254,7 +3291,7 @@
                                     <h4 class="product_name"><a href="product-details.html">Aliquam
                                             Consequat</a>
                                     </h4>
-                                    
+
                                     <div class="price_box">
                                         <span class="current_price">$26.00</span>
                                         <span class="old_price">$362.00</span>
@@ -3264,7 +3301,7 @@
                                     <h4 class="product_name"><a href="product-details.html">Aliquam
                                             Consequat</a>
                                     </h4>
-                                    
+
                                     <div class="price_box">
                                         <span class="current_price">$26.00</span>
                                         <span class="old_price">$362.00</span>
@@ -3304,9 +3341,9 @@
                                 style="box-shadow: 0 15px 10px rgba(0, 0, 0, 0.2);border-radius: 33px;">
                                 <div class="product_thumb">
                                     <a class="primary_img" href="product-details.html"><img
-                                            src="assets/img/product/product1.jpg" alt=""></a>
+                                            src="assets/img/product/lautruoc.jpg" alt=""></a>
                                     <a class="secondary_img" href="product-details.html"><img
-                                            src="assets/img/product/product2.jpg" alt=""></a>
+                                            src="assets/img/product/lausau.png" alt=""></a>
                                     <div class="label_product">
                                         <span class="label_sale">Sale</span>
 
@@ -3337,7 +3374,7 @@
                                     <h4 class="product_name"><a href="product-details.html">Aliquam
                                             Consequat</a>
                                     </h4>
-                                    
+
                                     <div class="price_box">
                                         <span class="current_price">$26.00</span>
                                         <span class="old_price">$362.00</span>
@@ -3347,7 +3384,7 @@
                                     <h4 class="product_name"><a href="product-details.html">Aliquam
                                             Consequat</a>
                                     </h4>
-                                    
+
                                     <div class="price_box">
                                         <span class="current_price">$26.00</span>
                                         <span class="old_price">$362.00</span>
@@ -3387,9 +3424,9 @@
                                 style="box-shadow: 0 15px 10px rgba(0, 0, 0, 0.2);border-radius: 33px;">
                                 <div class="product_thumb">
                                     <a class="primary_img" href="product-details.html"><img
-                                            src="assets/img/product/product1.jpg" alt=""></a>
+                                            src="assets/img/product/lautruoc.jpg" alt=""></a>
                                     <a class="secondary_img" href="product-details.html"><img
-                                            src="assets/img/product/product2.jpg" alt=""></a>
+                                            src="assets/img/product/lausau.png" alt=""></a>
                                     <div class="label_product">
                                         <span class="label_sale">Sale</span>
 
@@ -3420,7 +3457,7 @@
                                     <h4 class="product_name"><a href="product-details.html">Aliquam
                                             Consequat</a>
                                     </h4>
-                                    
+
                                     <div class="price_box">
                                         <span class="current_price">$26.00</span>
                                         <span class="old_price">$362.00</span>
@@ -3430,7 +3467,7 @@
                                     <h4 class="product_name"><a href="product-details.html">Aliquam
                                             Consequat</a>
                                     </h4>
-                                    
+
                                     <div class="price_box">
                                         <span class="current_price">$26.00</span>
                                         <span class="old_price">$362.00</span>
@@ -3470,9 +3507,9 @@
                                 style="box-shadow: 0 15px 10px rgba(0, 0, 0, 0.2);border-radius: 33px;">
                                 <div class="product_thumb">
                                     <a class="primary_img" href="product-details.html"><img
-                                            src="assets/img/product/product1.jpg" alt=""></a>
+                                            src="assets/img/product/lautruoc.jpg" alt=""></a>
                                     <a class="secondary_img" href="product-details.html"><img
-                                            src="assets/img/product/product2.jpg" alt=""></a>
+                                            src="assets/img/product/lausau.png" alt=""></a>
                                     <div class="label_product">
                                         <span class="label_sale">Sale</span>
 
@@ -3503,7 +3540,7 @@
                                     <h4 class="product_name"><a href="product-details.html">Aliquam
                                             Consequat</a>
                                     </h4>
-                                    
+
                                     <div class="price_box">
                                         <span class="current_price">$26.00</span>
                                         <span class="old_price">$362.00</span>
@@ -3513,7 +3550,7 @@
                                     <h4 class="product_name"><a href="product-details.html">Aliquam
                                             Consequat</a>
                                     </h4>
-                                    
+
                                     <div class="price_box">
                                         <span class="current_price">$26.00</span>
                                         <span class="old_price">$362.00</span>
@@ -3553,9 +3590,9 @@
                                 style="box-shadow: 0 15px 10px rgba(0, 0, 0, 0.2);border-radius: 33px;">
                                 <div class="product_thumb">
                                     <a class="primary_img" href="product-details.html"><img
-                                            src="assets/img/product/product1.jpg" alt=""></a>
+                                            src="assets/img/product/lautruoc.jpg" alt=""></a>
                                     <a class="secondary_img" href="product-details.html"><img
-                                            src="assets/img/product/product2.jpg" alt=""></a>
+                                            src="assets/img/product/lausau.png" alt=""></a>
                                     <div class="label_product">
                                         <span class="label_sale">Sale</span>
 
@@ -3586,7 +3623,7 @@
                                     <h4 class="product_name"><a href="product-details.html">Aliquam
                                             Consequat</a>
                                     </h4>
-                                    
+
                                     <div class="price_box">
                                         <span class="current_price">$26.00</span>
                                         <span class="old_price">$362.00</span>
@@ -3596,7 +3633,7 @@
                                     <h4 class="product_name"><a href="product-details.html">Aliquam
                                             Consequat</a>
                                     </h4>
-                                    
+
                                     <div class="price_box">
                                         <span class="current_price">$26.00</span>
                                         <span class="old_price">$362.00</span>
@@ -3636,9 +3673,9 @@
                                 style="box-shadow: 0 15px 10px rgba(0, 0, 0, 0.2);border-radius: 33px;">
                                 <div class="product_thumb">
                                     <a class="primary_img" href="product-details.html"><img
-                                            src="assets/img/product/product1.jpg" alt=""></a>
+                                            src="assets/img/product/lautruoc.jpg" alt=""></a>
                                     <a class="secondary_img" href="product-details.html"><img
-                                            src="assets/img/product/product2.jpg" alt=""></a>
+                                            src="assets/img/product/lausau.png" alt=""></a>
                                     <div class="label_product">
                                         <span class="label_sale">Sale</span>
 
@@ -3669,7 +3706,7 @@
                                     <h4 class="product_name"><a href="product-details.html">Aliquam
                                             Consequat</a>
                                     </h4>
-                                    
+
                                     <div class="price_box">
                                         <span class="current_price">$26.00</span>
                                         <span class="old_price">$362.00</span>
@@ -3679,7 +3716,7 @@
                                     <h4 class="product_name"><a href="product-details.html">Aliquam
                                             Consequat</a>
                                     </h4>
-                                    
+
                                     <div class="price_box">
                                         <span class="current_price">$26.00</span>
                                         <span class="old_price">$362.00</span>
@@ -3719,9 +3756,9 @@
                                 style="box-shadow: 0 15px 10px rgba(0, 0, 0, 0.2);border-radius: 33px;">
                                 <div class="product_thumb">
                                     <a class="primary_img" href="product-details.html"><img
-                                            src="assets/img/product/product1.jpg" alt=""></a>
+                                            src="assets/img/product/lautruoc.jpg" alt=""></a>
                                     <a class="secondary_img" href="product-details.html"><img
-                                            src="assets/img/product/product2.jpg" alt=""></a>
+                                            src="assets/img/product/lausau.png" alt=""></a>
                                     <div class="label_product">
                                         <span class="label_sale">Sale</span>
 
@@ -3752,7 +3789,7 @@
                                     <h4 class="product_name"><a href="product-details.html">Aliquam
                                             Consequat</a>
                                     </h4>
-                                    
+
                                     <div class="price_box">
                                         <span class="current_price">$26.00</span>
                                         <span class="old_price">$362.00</span>
@@ -3762,7 +3799,7 @@
                                     <h4 class="product_name"><a href="product-details.html">Aliquam
                                             Consequat</a>
                                     </h4>
-                                    
+
                                     <div class="price_box">
                                         <span class="current_price">$26.00</span>
                                         <span class="old_price">$362.00</span>
@@ -3802,9 +3839,9 @@
                                 style="box-shadow: 0 15px 10px rgba(0, 0, 0, 0.2);border-radius: 33px;">
                                 <div class="product_thumb">
                                     <a class="primary_img" href="product-details.html"><img
-                                            src="assets/img/product/product1.jpg" alt=""></a>
+                                            src="assets/img/product/lautruoc.jpg" alt=""></a>
                                     <a class="secondary_img" href="product-details.html"><img
-                                            src="assets/img/product/product2.jpg" alt=""></a>
+                                            src="assets/img/product/lausau.png" alt=""></a>
                                     <div class="label_product">
                                         <span class="label_sale">Sale</span>
 
@@ -3835,7 +3872,7 @@
                                     <h4 class="product_name"><a href="product-details.html">Aliquam
                                             Consequat</a>
                                     </h4>
-                                    
+
                                     <div class="price_box">
                                         <span class="current_price">$26.00</span>
                                         <span class="old_price">$362.00</span>
@@ -3845,7 +3882,7 @@
                                     <h4 class="product_name"><a href="product-details.html">Aliquam
                                             Consequat</a>
                                     </h4>
-                                    
+
                                     <div class="price_box">
                                         <span class="current_price">$26.00</span>
                                         <span class="old_price">$362.00</span>
@@ -3885,9 +3922,9 @@
                                 style="box-shadow: 0 15px 10px rgba(0, 0, 0, 0.2);border-radius: 33px;">
                                 <div class="product_thumb">
                                     <a class="primary_img" href="product-details.html"><img
-                                            src="assets/img/product/product1.jpg" alt=""></a>
+                                            src="assets/img/product/lautruoc.jpg" alt=""></a>
                                     <a class="secondary_img" href="product-details.html"><img
-                                            src="assets/img/product/product2.jpg" alt=""></a>
+                                            src="assets/img/product/lausau.png" alt=""></a>
                                     <div class="label_product">
                                         <span class="label_sale">Sale</span>
 
@@ -3918,7 +3955,7 @@
                                     <h4 class="product_name"><a href="product-details.html">Aliquam
                                             Consequat</a>
                                     </h4>
-                                    
+
                                     <div class="price_box">
                                         <span class="current_price">$26.00</span>
                                         <span class="old_price">$362.00</span>
@@ -3928,7 +3965,7 @@
                                     <h4 class="product_name"><a href="product-details.html">Aliquam
                                             Consequat</a>
                                     </h4>
-                                    
+
                                     <div class="price_box">
                                         <span class="current_price">$26.00</span>
                                         <span class="old_price">$362.00</span>
@@ -3968,9 +4005,9 @@
                                 style="box-shadow: 0 15px 10px rgba(0, 0, 0, 0.2);border-radius: 33px;">
                                 <div class="product_thumb">
                                     <a class="primary_img" href="product-details.html"><img
-                                            src="assets/img/product/product1.jpg" alt=""></a>
+                                            src="assets/img/product/lautruoc.jpg" alt=""></a>
                                     <a class="secondary_img" href="product-details.html"><img
-                                            src="assets/img/product/product2.jpg" alt=""></a>
+                                            src="assets/img/product/lausau.png" alt=""></a>
                                     <div class="label_product">
                                         <span class="label_sale">Sale</span>
 
@@ -4001,7 +4038,7 @@
                                     <h4 class="product_name"><a href="product-details.html">Aliquam
                                             Consequat</a>
                                     </h4>
-                                    
+
                                     <div class="price_box">
                                         <span class="current_price">$26.00</span>
                                         <span class="old_price">$362.00</span>
@@ -4011,7 +4048,7 @@
                                     <h4 class="product_name"><a href="product-details.html">Aliquam
                                             Consequat</a>
                                     </h4>
-                                    
+
                                     <div class="price_box">
                                         <span class="current_price">$26.00</span>
                                         <span class="old_price">$362.00</span>
@@ -4298,7 +4335,7 @@
                                             <li>
                                                 <a class="nav-link active" data-toggle="tab" href="#tab1" role="tab"
                                                     aria-controls="tab1" aria-selected="false"><img
-                                                        src="assets/img/product/product1.jpg" alt=""></a>
+                                                        src="assets/img/product/lautruoc.jpg" alt=""></a>
                                             </li>
                                             <li>
                                                 <a class="nav-link" data-toggle="tab" href="#tab2" role="tab"
@@ -4308,7 +4345,7 @@
                                             <li>
                                                 <a class="nav-link button_three" data-toggle="tab" href="#tab3"
                                                     role="tab" aria-controls="tab3" aria-selected="false"><img
-                                                        src="assets/img/product/product2.jpg" alt=""></a>
+                                                        src="assets/img/product/lausau.png" alt=""></a>
                                             </li>
                                             <li>
                                                 <a class="nav-link" data-toggle="tab" href="#tab4" role="tab"
