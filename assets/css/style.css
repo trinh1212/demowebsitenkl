@@ -163,7 +163,7 @@ figure {
 }
 
 .container {
-  max-width: 1170px;
+  /* max-width: 1170px; */
 }
 
 @media only screen and (max-width: 767px) {
@@ -266,7 +266,7 @@ input:-ms-input-placeholder, textarea:-ms-input-placeholder {
     Scroll Up 
 -----------------------------------------*/
 #scrollUp {
-  background: #40A944 none repeat scroll 0 0;
+  background: #cf1f1f none repeat scroll 0 0;
   bottom: 85px;
   color: #ffffff;
   cursor: pointer;
@@ -522,7 +522,7 @@ input:-ms-input-placeholder, textarea:-ms-input-placeholder {
   border-bottom: 1px solid #ededed;
 }
 .offcanvas_main_menu li a:hover {
-  color: #40A944;
+  color: #cf1f1f;
 }
 .offcanvas_main_menu li ul.sub-menu {
   padding-left: 20px;
@@ -2094,7 +2094,7 @@ input:-ms-input-placeholder, textarea:-ms-input-placeholder {
 .call-support p::before {
   content: '';
   position: absolute;
-  background: url("../img/icon/icon-phone.png") no-repeat 0 0;
+  background: url("../img/icon/icon-phone3.png") no-repeat 0 0;
   width: 32px;
   height: 32px;
   display: inline-block;
@@ -5051,7 +5051,7 @@ input:-ms-input-placeholder, textarea:-ms-input-placeholder {
   color: #40A944;
 }
 .color_three .blog_footer a::before {
-  color: #40A944;
+  color: #cf1f1f;
 }
 .color_three .owl-nav div:hover {
   color: #40A944;
@@ -5616,19 +5616,19 @@ input:-ms-input-placeholder, textarea:-ms-input-placeholder {
 
 /*home three css here*/
 .color_three .widgets_container.contact_us > p a:hover {
-  color: #40A944;
+  color: #cf1f1f;
 }
 .color_three .footer_menu ul li a:hover {
-  color: #40A944;
+  color: #cf1f1f;
 }
 .color_three .subscribe_form form button {
-  background: #40A944;
+  background: #cf1f1f;
 }
 .color_three .subscribe_form form button:hover {
   background: #222222;
 }
 .color_three .footer_bottom {
-  background: #40A944;
+  background: #cf1f1f;
 }
 
 /*home four css here*/
