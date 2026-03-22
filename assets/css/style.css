@@ -3670,7 +3670,7 @@ input:-ms-input-placeholder, textarea:-ms-input-placeholder {
 .price_box span.current_price {
   font-weight: 500;
   font-size: 17px;
-  color: #40A944;
+  color: #cf1f1f;
 }
 @media only screen and (max-width: 767px) {
   .price_box span.current_price {
@@ -5391,7 +5391,7 @@ input:-ms-input-placeholder, textarea:-ms-input-placeholder {
 
 .brand_container {
   padding: 25px 0 23px;
-  border: 1px solid #efefef;
+  /* border: 1px solid #efefef; */
   border-radius: 7px;
 }
 .brand_container .single_brand img {
@@ -6051,7 +6051,7 @@ input:-ms-input-placeholder, textarea:-ms-input-placeholder {
   color: #ffffff;
 }
 .pagination ul li.current {
-  background: #40A944;
+  background: #cf1f1f;
   color: #ffffff;
 }
 .pagination ul li.next {
@@ -11614,7 +11614,7 @@ input:-ms-input-placeholder, textarea:-ms-input-placeholder {
   color: #E81212;
 }
 .color_eight .search_box button {
-  background: #40a944;
+  background: #cf1f1f;
 }
 .color_eight .search_box button:hover {
   background: #000000;
