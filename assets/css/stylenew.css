@@ -1,0 +1,228 @@
+
+/* Thanh phía trên */
+.top-bar {
+width: 100%;
+background: #e81212;
+/* màu xanh giống hình */
+color: #fff;
+padding: 6px 0;
+overflow: hidden;
+position: relative;
+}
+
+/* Vùng chứa chữ chạy */
+.marquee {
+white-space: nowrap;
+overflow: hidden;
+position: relative;
+}
+
+/* Dòng chữ */
+.marquee span {
+display: inline-block;
+padding-left: 100%;
+/* để chữ bắt đầu từ bên phải */
+animation: marquee 12s linear infinite;
+font-weight: bold;
+font-size: 15px;
+}
+
+/* Hiệu ứng chạy */
+@keyframes marquee {
+0% {
+transform: translateX(0);
+}
+
+100% {
+transform: translateX(-100%);
+}
+}
+
+
+/* // */
+
+.single_brand {
+    text-align: center;
+}
+
+.single_brand img {
+    width: 100%;
+    max-width: 120px;
+    /* tùy chỉnh */
+    display: block;
+    margin: 0 auto;
+}
+
+.single_brand .brand-name {
+    margin-top: 8px;
+    font-size: 14px;
+    font-weight: 600;
+    color: #333;
+    text-transform: uppercase;
+    /* nếu muốn chữ in hoa */
+}
+
+/* KHUNG BAO BỌC CAROUSEL */
+.brand_container {
+    position: relative;
+    padding: 0 50px;
+    /* chừa khoảng cho mũi tên */
+}
+
+/* MŨI TÊN TRÁI – PHẢI */
+.brand_container::before,
+.brand_container::after {
+    content: ">";
+    position: absolute;
+    top: 40%;
+    transform: translateY(-50%);
+    font-size: 28px;
+    font-weight: bold;
+    color: #ccc;
+    background: #e81212;
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.15);
+    z-index: 2;
+}
+
+/* Mũi tên trái */
+.brand_container::before {
+    content: "<";
+    left: 10px;
+}
+
+/* Mũi tên phải */
+.brand_container::after {
+    right: 10px;
+}
+/* // */
+    
+.my-layout {
+margin-top: 20px;
+}
+
+.banner-box img {
+width: 100%;
+height: 100%;
+border-radius: 16px;
+object-fit: cover;
+}
+
+/* SERVICE BOX */
+.service-box {
+display: flex;
+align-items: center;
+gap: 15px;
+background: #fff;
+padding: 25px;
+border-radius: 14px;
+margin-bottom: 15px;
+box-shadow: 0 15px 10px rgba(0, 0, 0, 0.08);
+}
+
+.service-box .icon {
+width: 40px;
+height: 40px;
+}
+
+.service-box h5 {
+margin: 0;
+font-size: 16px;
+font-weight: 600;
+}
+
+.service-box p {
+margin: 0;
+font-size: 13px;
+color: #555;
+}
+/* /// */
+.category-wrapper {
+    position: relative;
+    width: 100%;
+    user-select: none;
+}
+
+.category-container {
+    display: flex;
+    gap: 16px;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    padding: 10px 0;
+    scrollbar-width: none;
+    scroll-snap-type: x mandatory;
+    cursor: grab;
+}
+
+.category-container::-webkit-scrollbar {
+    display: none;
+}
+
+.category-item {
+    flex: 0 0 auto;
+    width: 120px;
+    text-align: center;
+    scroll-snap-align: center;
+    background: white;
+    border-radius: 16px;
+    padding: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s;
+    display: block;
+    text-decoration: none;
+    color: #000;
+    cursor: pointer;
+}
+
+.category-item:hover {
+    transform: translateY(-5px);
+    color: #cf1f1f;
+}
+
+.category-item img {
+    width: 100%;
+    height: 90px;
+    object-fit: cover;
+    border-radius: 12px;
+}
+
+.category-item span {
+    display: block;
+    margin-top: 8px;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 36px;
+    height: 36px;
+    background: #cf1f1f;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.15);
+    cursor: pointer;
+    z-index: 20;
+    color: white;
+}
+
+.arrow:hover {
+    background: #e78383;
+}
+
+.arrow-left {
+    left: -40px;
+}
+
+.arrow-right {
+    right: -40px;
+}
