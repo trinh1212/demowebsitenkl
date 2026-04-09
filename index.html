@@ -4203,52 +4203,82 @@
     </script>
 
     <script>
-        document.querySelectorAll("a.category-item").forEach(a => {
-            a.addEventListener("dragstart", e => e.preventDefault());
-        });
+const box = document.getElementById("catScroll");
 
-        const box = document.getElementById("catScroll");
+// ========================
+// CHỐNG KÉO MẤT CLICK ITEM
+// ========================
+document.querySelectorAll("a.category-item").forEach(a => {
+    a.addEventListener("dragstart", e => e.preventDefault());
+});
 
-        function scrollToLeft() {
-            box.scrollBy({ left: -300, behavior: "smooth" });
-        }
+// ========================
+// NÚT CUỘN TRÁI / PHẢI AN TOÀN
+// ========================
+let isScrolling = false;
 
-        function scrollToRight() {
-            box.scrollBy({ left: 300, behavior: "smooth" });
-        }
+function safeScroll(target) {
+    if (isScrolling) return;      // chặn spam click
+    isScrolling = true;
 
-        let isDown = false;
-        let startX = 0;
-        let startScroll = 0;
+    box.scrollTo({
+        left: target,
+        behavior: "smooth"
+    });
 
-        box.addEventListener("pointerdown", (e) => {
-            isDown = true;
-            startX = e.clientX;
-            startScroll = box.scrollLeft;
-        });
+    setTimeout(() => isScrolling = false, 350);
+}
 
-        box.addEventListener("pointermove", (e) => {
-            if (!isDown) return;
-            const dx = e.clientX - startX;
-            box.scrollLeft = startScroll - dx;
-        });
+function scrollToLeft() {
+    const maxLeft = 0;
+    safeScroll(Math.max(box.scrollLeft - 300, maxLeft));
+}
 
-        box.addEventListener("pointerup", () => {
-            isDown = false;
-        });
+function scrollToRight() {
+    const maxRight = box.scrollWidth - box.clientWidth;
+    safeScroll(Math.min(box.scrollLeft + 300, maxRight));
+}
 
-        box.addEventListener("pointerleave", () => {
-            isDown = false;
-        });
+// ========================
+// KÉO BẰNG NGÓN TAY / CHUỘT
+// ========================
+let isDown = false;
+let startX = 0;
+let startScroll = 0;
 
-        // CHẶN CLICK NẾU CÓ KÉO
-        document.querySelectorAll(".category-item").forEach(a => {
-            a.addEventListener("click", (e) => {
-                const moved = Math.abs(box.scrollLeft - startScroll);
-                if (moved > 5) e.preventDefault();
-            });
-        });
-    </script>
+box.addEventListener("pointerdown", (e) => {
+    isDown = true;
+    startX = e.clientX;
+    startScroll = box.scrollLeft;
+    box.style.cursor = "grabbing";
+});
+
+box.addEventListener("pointermove", (e) => {
+    if (!isDown) return;
+    const dx = e.clientX - startX;
+    box.scrollLeft = startScroll - dx;
+});
+
+box.addEventListener("pointerup", () => {
+    isDown = false;
+    box.style.cursor = "grab";
+});
+
+box.addEventListener("pointerleave", () => {
+    isDown = false;
+    box.style.cursor = "grab";
+});
+
+// ========================
+// CHẶN CLICK NẾU CÓ KÉO
+// ========================
+document.querySelectorAll(".category-item").forEach(a => {
+    a.addEventListener("click", (e) => {
+        const moved = Math.abs(box.scrollLeft - startScroll);
+        if (moved > 5) e.preventDefault();
+    });
+});
+</script>
 </body>
 
 <!-- Mirrored from htmldemo.net/NKL/NKL/index-3.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 21 May 2024 14:06:22 GMT -->
