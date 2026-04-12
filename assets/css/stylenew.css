@@ -288,72 +288,47 @@ color: #555;
     max-width: 100%;
     overflow: hidden;
 }
-.date-field {
-    width: 100%;
-    margin-top: 10px;
+
+
+.date-input {
+  position: relative;
+  width: 100%;
+  max-width: 400px;
 }
 
-/* Label */
-.date-field label {
-    display: block;
-    font-size: 15px;
-    margin-bottom: 6px;
-    color: #333;
-    font-weight: 600;
+.date-input input {
+  width: 100%;
+  padding: 12px 40px 12px 14px;
+  font-size: 16px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  background: #f5f5f5;
+  outline: none;
+  transition: 0.3s;
 }
 
-/* Wrapper */
-.input-wrapper {
-    position: relative;
+.date-input input:focus {
+  border-color: #4CAF50;
+  background: #fff;
 }
 
-/* Input */
-#pickup-date {
-    width: 100%;
-    padding: 14px 42px 14px 14px;
-
-    font-size: 16px;
-    border: 1px solid #ccc;
-    border-radius: 12px;
-
-    background: #fff;
-    box-sizing: border-box;
-
-    cursor: pointer;
-}
-
-/* Focus */
-#pickup-date:focus {
-    border-color: #ff6600;
-    outline: none;
-}
-
-/* Icon */
 .calendar-icon {
-    position: absolute;
-    right: 12px;
-    top: 50%;
-    transform: translateY(-50%);
-    font-size: 18px;
-    pointer-events: none;
-}
-
-/* Tablet */
-@media (max-width: 768px) {
-    #pickup-date {
-        padding: 13px 40px 13px 13px;
-        font-size: 15px;
-    }
+  position: absolute;
+  right: 25px;
+  top: 50%;
+  transform: translateY(-50%);
+  pointer-events: none;
 }
 
 /* Mobile */
-@media (max-width: 480px) {
-    #pickup-date {
-        padding: 14px 42px 14px 14px;
-        font-size: 16px;
-        border-radius: 10px;
-    }
+@media (max-width: 600px) {
+  .date-input input {
+    font-size: 14px;
+    padding: 10px 36px 10px 12px;
+  }
 }
+
+
 .note {
     font-size: 14px;
     color: #555;
