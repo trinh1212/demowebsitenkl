@@ -269,31 +269,54 @@ color: #555;
     background: #f9fff9;
 }
 
+/* Wrapper giữ placeholder và input */
+.date-wrapper {
+    position: relative;
+    width: 100%;
+}
+
+/* Input */
 .date-input {
     width: 100%;
-    box-sizing: border-box;
     padding: 12px 14px;
+    font-size: 16px;
 
     border: 1px solid #ccc;
     border-radius: 10px;
 
-    font-size: 16px;
     background-color: #f8f8f8;
 
     -webkit-appearance: none;
     appearance: none;
+    box-sizing: border-box;
 }
-/* Ngăn overflow khi được đặt trong khung bo góc */
-.optioncart-content .date-input {
-    max-width: 100%;
-    overflow: hidden;
+
+/* Placeholder giả */
+.date-placeholder {
+    position: absolute;
+    left: 14px;
+    top: 50%;
+    transform: translateY(-50%);
+
+    color: #999;
+    pointer-events: none;
+
+    font-size: 16px;
 }
-/* Mobile responsive */
+
+/* Khi input có giá trị → ẩn placeholder */
+.date-input:not(:placeholder-shown) + .date-placeholder,
+.date-input:valid + .date-placeholder {
+    opacity: 0;
+}
+
+/* Mobile fix */
 @media (max-width: 600px) {
     .date-input {
-        font-size: 16px; /* bắt buộc để ngăn zoom trên iOS */
+        font-size: 16px;
     }
 }
+
 .note {
     font-size: 14px;
     color: #555;
