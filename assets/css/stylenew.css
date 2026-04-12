@@ -331,7 +331,7 @@ color: #555;
 /* Mobile */
 @media (max-width: 480px) {
     .date-input {
-        padding: 10px 12px;
+        padding: 20px 12px;
         font-size: 15px;
         border-radius: 8px;
     }
