@@ -40,7 +40,6 @@
     <!-- Main Style CSS -->
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/css/stylenew.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <!--modernizr min js here-->
     <script src="assets/js/vendor/modernizr-3.7.1.min.js"></script>
@@ -348,14 +347,10 @@
 
 
 
-<div class="date-field">
-    <label>Pick up date</label>
-    <div class="input-wrapper">
-        <input type="text" id="pickupDate" placeholder="mm/dd/yyyy">
-        <span class="icon">📅</span>
-    </div>
-</div>
-
+                                    <div class="date-field">
+                                        <label>Pick up date</label>
+                                        <input type="date" class="date-input">
+                                    </div>
 
                                     <p class="note">
                                         *Note: Nga Kim Le will hold your order until close of the next business day if
@@ -382,14 +377,10 @@
                                     <p><strong>Pick up in 2 Hours</strong></p>
 
 
-<div class="date-field">
-    <label>Pick up date</label>
-    <div class="input-wrapper">
-        <input type="text" id="pickupDate" placeholder="mm/dd/yyyy">
-        <span class="icon">📅</span>
-    </div>
-</div>
-
+                                    <div class="date-field">
+                                        <label>Pick up date</label>
+                                        <input type="date" class="date-input">
+                                    </div>
 
                                     <p class="note">
                                         *Note: Nga Kim Le will hold your order until close of the next business day if
@@ -709,7 +700,6 @@
     <script src="assets/js/tippy-bundle.umd.js"></script>
     <!-- Plugins JS -->
     <script src="assets/js/plugins.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
     <!-- Main JS -->
     <script src="assets/js/main.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
@@ -829,12 +819,7 @@
         document.querySelector('input[type="radio"]:checked')
             .dispatchEvent(new Event('change'));
     </script>
-    <script>
-        flatpickr("#pickupDate", {
-            dateFormat: "m/d/Y",
-            minDate: "today"
-        });
-    </script>
+
 </body>
 
 <!-- Mirrored from htmldemo.net/NKL/NKL/index-3.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 21 May 2024 14:06:22 GMT -->
