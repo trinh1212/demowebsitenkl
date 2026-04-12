@@ -269,8 +269,27 @@ color: #555;
     background: #f9fff9;
 }
 
+.date-input {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 12px 14px;
+
+    border: 1px solid #ccc;
+    border-radius: 10px;
+
+    font-size: 16px;
+    background-color: #f8f8f8;
+
+    -webkit-appearance: none;
+    appearance: none;
+}
+/* Ngăn overflow khi được đặt trong khung bo góc */
+.optioncart-content .date-input {
+    max-width: 100%;
+    overflow: hidden;
+}
 .date-field {
-    width: 90%;
+    width: 100%;
 }
 
 /* Label */
@@ -323,7 +342,6 @@ color: #555;
         font-size: 15px;
     }
 }
-
 .note {
     font-size: 14px;
     color: #555;
