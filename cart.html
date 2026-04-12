@@ -344,13 +344,9 @@
                                 </label>
                                 <div class="optioncart-content">
                                     <p><strong>Pick up in 2 Hours</strong></p>
-                                    <div class="date-field">
-                                        <label>Pick up date</label>
-
-                                        <div class="input-wrapper">
-                                            <input type="text" id="pickup-date" placeholder="Select date" readonly>
-                                            <span class="calendar-icon">📅</span>
-                                        </div>
+                                    <div class="date-input">
+                                        <input type="text" id="datePicker" placeholder="Select date">
+                                        <span class="calendar-icon">📅</span>
                                     </div>
                                     <p class="note">
                                         *Note: Nga Kim Le will hold your order until close of the next business day if
@@ -376,13 +372,9 @@
                                     <p><strong>Pick up in 2 Hours</strong></p>
 
 
-                                    <div class="date-field">
-                                        <label>Pick up date</label>
-
-                                        <div class="input-wrapper">
-                                            <input type="text" id="pickup-date" placeholder="Select date" readonly>
-                                            <span class="calendar-icon">📅</span>
-                                        </div>
+                                    <div class="date-input">
+                                        <input type="text" id="datePicker" placeholder="Select date">
+                                        <span class="calendar-icon">📅</span>
                                     </div>
 
                                     <p class="note">
@@ -408,14 +400,10 @@
 
                                 <div class="optioncart-content">
                                     <div class="shipping-form">
-                                    <div class="date-field">
-                                        <label>Pick up date</label>
-
-                                        <div class="input-wrapper">
-                                            <input type="text" id="pickup-date" placeholder="Select date" readonly>
+                                        <div class="date-input">
+                                            <input type="text" id="datePicker" placeholder="Select date">
                                             <span class="calendar-icon">📅</span>
                                         </div>
-                                    </div>
                                         <div class="row">
                                             <div class="col">
                                                 <input type="text" placeholder="Trinh">
@@ -485,14 +473,10 @@
 
                                 <div class="optioncart-content">
                                     <div class="shipping-form">
-                                    <div class="date-field">
-                                        <label>Pick up date</label>
-
-                                        <div class="input-wrapper">
-                                            <input type="text" id="pickup-date" placeholder="Select date" readonly>
+                                        <div class="date-input">
+                                            <input type="text" id="datePicker" placeholder="Select date">
                                             <span class="calendar-icon">📅</span>
                                         </div>
-                                    </div>
                                         <div class="row">
                                             <div class="col">
                                                 <input type="text" placeholder="Trinh">
@@ -833,10 +817,10 @@
             .dispatchEvent(new Event('change'));
     </script>
     <script>
-        flatpickr("#pickup-date", {
-            dateFormat: "m/d/Y",
-            defaultDate: "today",
+        flatpickr("#datePicker", {
+            dateFormat: "d/m/Y",
             minDate: "today",
+            disableMobile: true //
         });
     </script>
 </body>
