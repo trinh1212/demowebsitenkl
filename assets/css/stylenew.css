@@ -290,54 +290,68 @@ color: #555;
 }
 .date-field {
     width: 100%;
-    display: flex;
-    flex-direction: column;
-    gap: 6px;
+    margin-top: 10px;
 }
 
+/* Label */
 .date-field label {
-    font-size: 16px;
-    font-weight: 600;
+    display: block;
+    font-size: 15px;
+    margin-bottom: 6px;
     color: #333;
+    font-weight: 600;
 }
 
-/* Input style */
-.date-input {
+/* Wrapper */
+.input-wrapper {
+    position: relative;
+}
+
+/* Input */
+#pickup-date {
     width: 100%;
-    padding: 14px 16px;
-    font-size: 17px;
+    padding: 14px 42px 14px 14px;
+
+    font-size: 16px;
     border: 1px solid #ccc;
     border-radius: 12px;
+
     background: #fff;
     box-sizing: border-box;
-    appearance: none; /* giữ giao diện sạch nhưng không ẩn icon */
+
+    cursor: pointer;
 }
 
-/* iOS Safari fix (để không biến thành ô trắng không viền) */
-.date-input:focus {
-    border-color: #4CAF50;
+/* Focus */
+#pickup-date:focus {
+    border-color: #ff6600;
     outline: none;
+}
+
+/* Icon */
+.calendar-icon {
+    position: absolute;
+    right: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 18px;
+    pointer-events: none;
 }
 
 /* Tablet */
 @media (max-width: 768px) {
-    .date-input {
-        padding: 12px 14px;
-        font-size: 16px;
-        border-radius: 10px;
+    #pickup-date {
+        padding: 13px 40px 13px 13px;
+        font-size: 15px;
     }
 }
 
 /* Mobile */
 @media (max-width: 480px) {
-    .date-input {
-        padding: 20px 12px;
-        font-size: 15px;
-        border-radius: 8px;
-    }
-
-    .date-field label {
-        font-size: 15px;
+    #pickup-date {
+        padding: 14px 42px 14px 14px;
+        font-size: 16px;
+        border-radius: 10px;
     }
 }
 .note {
