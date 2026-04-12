@@ -273,41 +273,54 @@ color: #555;
     width: 100%;
 }
 
-/* Input to đẹp trên desktop */
+/* Label */
+.date-field label {
+    display: block;
+    font-size: 14px;
+    margin-bottom: 6px;
+    color: #555;
+}
+
+/* Wrapper để chứa icon */
+.input-wrapper {
+    position: relative;
+}
+
+/* Input */
 .date-input {
     width: 100%;
-    padding: 16px 18px;
+    padding: 14px 40px 14px 14px;
 
-    font-size: 18px;
+    font-size: 16px;
     border: 1px solid #ccc;
     border-radius: 12px;
 
-    background-color: #f8f8f8;
+    background-color: #fff; /* đổi từ xám sang trắng cho rõ */
     box-sizing: border-box;
-
-    transition: all 0.2s ease;
 }
 
-/* Hiệu ứng focus */
+/* Icon calendar */
+.input-wrapper .icon {
+    position: absolute;
+    right: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 18px;
+    color: #666;
+    pointer-events: none;
+}
+
+/* Focus đẹp hơn */
 .date-input:focus {
-    border-color: #333;
+    border-color: #ff6600;
     outline: none;
 }
 
-/* Tablet: nhỏ hơn 1 chút */
-@media (max-width: 900px) {
-    .date-input {
-        font-size: 16px;
-        padding: 14px 16px;
-    }
-}
-
-/* Mobile: nhỏ gọn */
+/* Mobile nhỏ lại */
 @media (max-width: 600px) {
     .date-input {
+        padding: 12px 38px 12px 12px;
         font-size: 15px;
-        padding: 12px 14px;
-        border-radius: 10px;
     }
 }
 
