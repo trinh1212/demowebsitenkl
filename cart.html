@@ -40,6 +40,7 @@
     <!-- Main Style CSS -->
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/css/stylenew.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <!--modernizr min js here-->
     <script src="assets/js/vendor/modernizr-3.7.1.min.js"></script>
@@ -345,10 +346,12 @@
                                     <p><strong>Pick up in 2 Hours</strong></p>
 
                                     <div class="date-field">
-                                        <label>Pick up date</label>
+
 
                                         <div class="input-wrapper">
-                                            <input type="date" class="date-input" placeholder="mm/dd/yyyy">
+                                            <input type="text" class="date-input" id="pickupDate"
+                                                placeholder="mm/dd/yyyy">
+
                                         </div>
                                     </div>
 
@@ -375,12 +378,13 @@
 
                                 <div class="optioncart-content">
                                     <p><strong>Pick up in 2 Hours</strong></p>
-
                                     <div class="date-field">
-                                        <label>Pick up date</label>
+
 
                                         <div class="input-wrapper">
-                                            <input type="date" class="date-input" placeholder="mm/dd/yyyy">
+                                            <input type="text" class="date-input" id="pickupDate"
+                                                placeholder="mm/dd/yyyy">
+
                                         </div>
                                     </div>
 
@@ -702,7 +706,7 @@
     <script src="assets/js/tippy-bundle.umd.js"></script>
     <!-- Plugins JS -->
     <script src="assets/js/plugins.js"></script>
-
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
     <!-- Main JS -->
     <script src="assets/js/main.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
@@ -821,6 +825,12 @@
         // bật nội dung của cái đang checked khi load page
         document.querySelector('input[type="radio"]:checked')
             .dispatchEvent(new Event('change'));
+    </script>
+    <script>
+        flatpickr("#pickupDate", {
+            dateFormat: "m/d/Y",
+            minDate: "today"
+        });
     </script>
 </body>
 
