@@ -41,8 +41,10 @@
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/css/stylenew.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
     <!--modernizr min js here-->
     <script src="assets/js/vendor/modernizr-3.7.1.min.js"></script>
+
 
 </head>
 
@@ -340,18 +342,16 @@
                                         <p>Pick it up inside the store</p>
                                     </div>
                                 </label>
-
                                 <div class="optioncart-content">
                                     <p><strong>Pick up in 2 Hours</strong></p>
-
-
-
-
                                     <div class="date-field">
                                         <label>Pick up date</label>
-                                        <input type="date" class="date-input">
-                                    </div>
 
+                                        <div class="input-wrapper">
+                                            <input type="text" id="pickup-date" placeholder="Select date" readonly>
+                                            <span class="calendar-icon">📅</span>
+                                        </div>
+                                    </div>
                                     <p class="note">
                                         *Note: Nga Kim Le will hold your order until close of the next business day if
                                         your order isn’t picked up within your scheduled pick up date, after that your
@@ -363,7 +363,6 @@
                                     </p>
                                 </div>
                             </div>
-
                             <div class="optioncart">
                                 <label class="optioncart-header">
                                     <input type="radio" name="method" value="curbside">
@@ -379,7 +378,11 @@
 
                                     <div class="date-field">
                                         <label>Pick up date</label>
-                                        <input type="date" class="date-input">
+
+                                        <div class="input-wrapper">
+                                            <input type="text" id="pickup-date" placeholder="Select date" readonly>
+                                            <span class="calendar-icon">📅</span>
+                                        </div>
                                     </div>
 
                                     <p class="note">
@@ -405,10 +408,14 @@
 
                                 <div class="optioncart-content">
                                     <div class="shipping-form">
-                                        <div class="date-field">
-                                            <label>Pick up date</label>
-                                            <input type="date" class="date-input">
+                                    <div class="date-field">
+                                        <label>Pick up date</label>
+
+                                        <div class="input-wrapper">
+                                            <input type="text" id="pickup-date" placeholder="Select date" readonly>
+                                            <span class="calendar-icon">📅</span>
                                         </div>
+                                    </div>
                                         <div class="row">
                                             <div class="col">
                                                 <input type="text" placeholder="Trinh">
@@ -478,10 +485,14 @@
 
                                 <div class="optioncart-content">
                                     <div class="shipping-form">
-                                        <div class="date-field">
-                                            <label>Pick up date</label>
-                                            <input type="date" class="date-input">
+                                    <div class="date-field">
+                                        <label>Pick up date</label>
+
+                                        <div class="input-wrapper">
+                                            <input type="text" id="pickup-date" placeholder="Select date" readonly>
+                                            <span class="calendar-icon">📅</span>
                                         </div>
+                                    </div>
                                         <div class="row">
                                             <div class="col">
                                                 <input type="text" placeholder="Trinh">
@@ -705,7 +716,7 @@
     <!-- Main JS -->
     <script src="assets/js/main.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
     <script>
         var swiper = new Swiper(".mySwiper", {
             loop: true,
@@ -821,7 +832,13 @@
         document.querySelector('input[type="radio"]:checked')
             .dispatchEvent(new Event('change'));
     </script>
-
+    <script>
+        flatpickr("#pickup-date", {
+            dateFormat: "m/d/Y",
+            defaultDate: "today",
+            minDate: "today",
+        });
+    </script>
 </body>
 
 <!-- Mirrored from htmldemo.net/NKL/NKL/index-3.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 21 May 2024 14:06:22 GMT -->
