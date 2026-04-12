@@ -270,13 +270,30 @@ color: #555;
 }
 
 .date-input {
-    padding: 10px 12px;
     width: 100%;
-    border: 1px solid #ccc;
-    border-radius: 8px;
-    margin: 10px 0;
-}
+    box-sizing: border-box;
+    padding: 12px 14px;
 
+    border: 1px solid #ccc;
+    border-radius: 10px;
+
+    font-size: 16px;
+    background-color: #f8f8f8;
+
+    -webkit-appearance: none;
+    appearance: none;
+}
+/* Ngăn overflow khi được đặt trong khung bo góc */
+.optioncart-content .date-input {
+    max-width: 100%;
+    overflow: hidden;
+}
+/* Mobile responsive */
+@media (max-width: 600px) {
+    .date-input {
+        font-size: 16px; /* bắt buộc để ngăn zoom trên iOS */
+    }
+}
 .note {
     font-size: 14px;
     color: #555;
