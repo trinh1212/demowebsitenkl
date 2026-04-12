@@ -290,55 +290,53 @@ color: #555;
 }
 .date-field {
     width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
 }
 
-/* Label */
 .date-field label {
-    display: block;
-    font-size: 14px;
-    margin-bottom: 6px;
-    color: #555;
+    font-size: 16px;
+    font-weight: 600;
+    color: #333;
 }
 
-/* Wrapper để chứa icon */
-.input-wrapper {
-    position: relative;
-}
-
-/* Input */
+/* Input style */
 .date-input {
     width: 100%;
-    padding: 14px 40px 14px 14px;
-
-    font-size: 16px;
+    padding: 14px 16px;
+    font-size: 17px;
     border: 1px solid #ccc;
     border-radius: 12px;
-
-    background-color: #fff; /* đổi từ xám sang trắng cho rõ */
+    background: #fff;
     box-sizing: border-box;
+    appearance: none; /* giữ giao diện sạch nhưng không ẩn icon */
 }
 
-/* Icon calendar */
-.input-wrapper .icon {
-    position: absolute;
-    right: 12px;
-    top: 50%;
-    transform: translateY(-50%);
-    font-size: 18px;
-    color: #666;
-    pointer-events: none;
-}
-
-/* Focus đẹp hơn */
+/* iOS Safari fix (để không biến thành ô trắng không viền) */
 .date-input:focus {
-    border-color: #ff6600;
+    border-color: #4CAF50;
     outline: none;
 }
 
-/* Mobile nhỏ lại */
-@media (max-width: 600px) {
+/* Tablet */
+@media (max-width: 768px) {
     .date-input {
-        padding: 12px 38px 12px 12px;
+        padding: 12px 14px;
+        font-size: 16px;
+        border-radius: 10px;
+    }
+}
+
+/* Mobile */
+@media (max-width: 480px) {
+    .date-input {
+        padding: 10px 12px;
+        font-size: 15px;
+        border-radius: 8px;
+    }
+
+    .date-field label {
         font-size: 15px;
     }
 }
