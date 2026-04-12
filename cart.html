@@ -349,7 +349,7 @@
 
                                     <div class="date-field">
                                         <label>Pick up date</label>
-                                        <input type="date" class="date-input">
+                                        <input type="date" id="date" class="custom-date" placeholder="Select date">
                                     </div>
 
                                     <p class="note">
@@ -379,7 +379,7 @@
 
                                     <div class="date-field">
                                         <label>Pick up date</label>
-                                        <input type="date" class="date-input" placeholder="Select date">
+                                        <input type="date" id="date" class="custom-date" placeholder="Select date">
                                     </div>
 
                                     <p class="note">
@@ -454,9 +454,9 @@
 
                                         <label class="checkbox">
                                             <input type="checkbox">
-                                            <span>Đây là địa chỉ kinh doanh</span>
+                                            <span>This is business address</span>
                                         </label>
-                                        <input type="text" class="company" placeholder="Nhập tên công ty">
+                                        <input type="text" class="company" placeholder="Enter company name">
                                         <p class="note">
                                             Note: We currently deliver only to selected ZIP codes. Orders placed before
                                             12pm noon are eligible for same day delivery. Orders placed after 12pm will
@@ -526,9 +526,9 @@
 
                                         <label class="checkbox">
                                             <input type="checkbox">
-                                            <span>Đây là địa chỉ kinh doanh</span>
+                                            <span>This is business address</span>
                                         </label>
-                                        <input type="text" class="company" placeholder="Nhập tên công ty">
+                                        <input type="text" class="company" placeholder="Enter company name">
                                         <p class="note">
                                             Note: We currently deliver to 49/50 U.S. states. Unfortunately, we do not
                                             deliver to Hawaii at this time
@@ -819,7 +819,15 @@
         document.querySelector('input[type="radio"]:checked')
             .dispatchEvent(new Event('change'));
     </script>
+    <script>const dateInput = document.getElementById("date");
 
+        const today = new Date();
+        const yyyy = today.getFullYear();
+        const mm = String(today.getMonth() + 1).padStart(2, '0');
+        const dd = String(today.getDate()).padStart(2, '0');
+
+        dateInput.value = `${yyyy}-${mm}-${dd}`;
+        dateInput.classList.add("has-value"); // ẩn placeholder</script>
 </body>
 
 <!-- Mirrored from htmldemo.net/NKL/NKL/index-3.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 21 May 2024 14:06:22 GMT -->
