@@ -269,51 +269,45 @@ color: #555;
     background: #f9fff9;
 }
 
-/* Wrapper giữ placeholder và input */
-.date-wrapper {
-    position: relative;
+.date-field {
     width: 100%;
 }
 
-/* Input */
+/* Input to đẹp trên desktop */
 .date-input {
     width: 100%;
-    padding: 12px 14px;
-    font-size: 16px;
+    padding: 16px 18px;
 
+    font-size: 18px;
     border: 1px solid #ccc;
-    border-radius: 10px;
+    border-radius: 12px;
 
     background-color: #f8f8f8;
-
-    -webkit-appearance: none;
-    appearance: none;
     box-sizing: border-box;
+
+    transition: all 0.2s ease;
 }
 
-/* Placeholder giả */
-.date-placeholder {
-    position: absolute;
-    left: 14px;
-    top: 50%;
-    transform: translateY(-50%);
-
-    color: #999;
-    pointer-events: none;
-
-    font-size: 16px;
+/* Hiệu ứng focus */
+.date-input:focus {
+    border-color: #333;
+    outline: none;
 }
 
-/* Khi input có giá trị → ẩn placeholder */
-.date-input:not(:placeholder-shown) + .date-placeholder,
-.date-input:valid + .date-placeholder {
-    opacity: 0;
-}
-
-/* Mobile fix */
-@media (max-width: 600px) {
+/* Tablet: nhỏ hơn 1 chút */
+@media (max-width: 900px) {
     .date-input {
         font-size: 16px;
+        padding: 14px 16px;
+    }
+}
+
+/* Mobile: nhỏ gọn */
+@media (max-width: 600px) {
+    .date-input {
+        font-size: 15px;
+        padding: 12px 14px;
+        border-radius: 10px;
     }
 }
 
