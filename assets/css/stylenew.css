@@ -411,3 +411,128 @@ color: #555;
 .shipping-form .company {
     margin-top: 4px;
 }
+/* // */
+/* HEADER */
+.why-header {
+  background: rgba(207, 31, 31, 0.08);
+  padding: 40px;
+  border-radius: 20px;
+  text-align: center;
+  margin: 40px 0;
+}
+
+.why-header h2 {
+  font-size: 28px;
+  font-weight: 700;
+}
+
+.why-header .sub {
+  margin-top: 10px;
+  font-size: 18px;
+}
+
+.why-header span {
+  color: #cf1f1f;
+  font-weight: 600;
+}
+
+.why-header .desc {
+  margin-top: 10px;
+  font-size: 14px;
+  color: #666;
+}
+
+/* GRID */
+.why-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  margin-bottom: 50px;
+}
+
+.card {
+  background: rgba(243, 81, 81, 0.1);
+  padding: 25px;
+  border-radius: 16px;
+  text-align: center;
+  transition: 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  background: rgba(243, 81, 81, 0.1);
+}
+
+.icon {
+  font-size: 28px;
+  margin-bottom: 10px;
+}
+
+.card h3 {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.card p {
+  font-size: 13px;
+  color: #555;
+}
+
+/* SERVICE */
+.service {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  background: rgba(243, 81, 81, 0.1);
+  padding: 30px;
+  border-radius: 20px;
+  flex-wrap: wrap;
+  margin-bottom: 50px;
+}
+
+.service-text {
+  flex: 1;
+}
+
+.service-text h2 {
+  font-size: 22px;
+  margin-bottom: 10px;
+}
+
+.service-text p {
+  font-size: 14px;
+  color: #555;
+  margin-bottom: 15px;
+}
+
+.tags span {
+  display: inline-block;
+  background: #cf1f1f;
+  color: white;
+  padding: 6px 12px;
+  border-radius: 999px;
+  font-size: 12px;
+  margin-right: 10px;
+}
+
+/* IMAGE */
+.service-img {
+  flex: 1;
+}
+
+.service-img img {
+  width: 100%;
+  border-radius: 16px;
+  object-fit: cover;
+}
+
+/* RESPONSIVE */
+@media (max-width: 900px) {
+  .why-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .service {
+    flex-direction: column;
+  }
+}
